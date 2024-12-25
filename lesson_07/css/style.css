@@ -62,7 +62,7 @@ span{
     margin-right: 5px;
     width: 37px;
     height: 36px;
-    background-image: url(/img/correct.svg);
+    background-image: url(../img/correct.svg);
 }
 
 
@@ -161,7 +161,7 @@ border-radius: 50%;
     font-family: Epilogue;
     font-size: 20px;
     font-weight: 400;
-    background: url(/img/Shape.svg) 32px 40px / 48px no-repeat;
+    background: url(../img/Shape.svg) 32px 40px / 48px no-repeat;
 }
 
 .quote{
