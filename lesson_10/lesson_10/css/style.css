@@ -1,0 +1,255 @@
+.wrapper__page{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: rgb(250, 181, 97);
+}
+.wrapper__block{
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 10px 10px;
+}
+.wrapper__block--1{
+    background-color: blueviolet;
+}
+.wrapper__block--2 {
+    background-color:aquamarine;
+    padding: 20px 5px;
+}
+.wrapper__block--3 {
+    background-color: chartreuse;
+}
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(253, 202, 140);
+}
+h1{
+    font-size: 46px;
+}
+p{
+    font-size: 36px;
+}
+.wrapper__block--static{
+    position: static;
+}
+.wrapper__block--relative{
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+.wrapper__page--absolute{
+    position: relative;
+}
+.wrapper__block--absolute{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.wrapper__block--fixed{
+    position: fixed;
+    top: 90%;
+    left: 90%;
+}
+.wrapper__page--sticky{
+    height: 500px;
+    background-color: rgb(196, 165, 127);
+}
+.wrapper__block--sticky{
+    position: sticky;
+    top: 20px;
+}
+.sticky-header__title{
+    font-size: 36px;
+    width: 100%;
+    background-color: aqua;
+    height: 50px;
+    position: sticky;
+    top: 10px;
+    margin-bottom: 10px;
+}
+.sticky-header__box{
+    position: relative;
+}
+.homework__thumbnail{
+    margin: 100px 0px;
+    width: 1440px;
+    height: 880px;
+    position: relative;
+    background-color: #28293E;
+}
+.thumbnail-homework__item--ovel{
+    position: absolute;
+    top: 278px;
+    left: 835px;
+    border-radius: 370px;
+    border: 1px solid #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.thumbnail-homework__item--laptop{
+    position: absolute;
+    top: 178px;
+    left: 735px;
+    background-color: #B550F8;
+    width: 246px;
+    height: 305px;
+    border-radius: 122px 122px 7px 7px;
+}
+.thumbnail-homework__item--laptop img{
+    position: absolute;
+    top: 24px;
+    left: 21px;
+
+}
+.thumbnail-homework__item--star img{
+    position: absolute;
+    top: 246px;
+    left: 1074px;
+}
+.thumbnail-homework__item--star {
+    position: absolute;
+    top: 218px;
+    left: 1039px;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background-color: #EF6D58;
+}
+.thumbnail-homework__item--star img{
+    position: absolute;
+    top: 25%;
+    left: 32%;
+}
+.thumbnail-homework__item--cloud img{
+    position: absolute;
+    top: 258px;
+    left: 1193px;
+}
+.thumbnail-homework__item--girl{
+    position: absolute;
+    top: 367px;
+    left: 1059px;
+    width: 246px;
+    height: 305px;
+    background-color: #F7CC47;
+    border-radius: 122px 122px 7px 7px;
+}
+.thumbnail-homework__item--girl img{
+    position: absolute;
+    top: 12%;
+    left: 0;
+}
+.thumbnail-homework__item--shape img{
+    position: absolute;
+    top: 519px;
+    left: 735px;
+}
+.thumbnail-homework__item--arrow img{
+    position: absolute;
+    top: 721px;
+    left: 1049px;
+}
+.thumbnail-homework__item--screen img{
+    position: absolute;
+    top: 609px;
+    left: 791px;
+    border-radius: 7px;
+}
+.homework__galery{
+    width: 1440px;
+    height: 750px;
+    background-color: #28293E;
+}
+.galery-homework{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galery-homework__card{
+    width: 33.33%;
+    border: 1px solid #3A3C56;
+    height: 608px;
+}
+.galery-homework__card--design{
+    background-image: url(../img/galery/frame-desigh.webp);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+}
+.galery-homework__card--branding{
+    background-image: url(../img/galery/frame-branding.webp);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+}
+
+.galery-homework__card--illustration{
+    background-image: url(../img/galery/frame-illustration.webp);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+}
+
+span{
+    border-radius: 19px;
+    background: #FFF;
+    padding: 10px 15px 11px 15px;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #391400;
+    text-transform: capitalize;
+    transition: all 0.3s;
+}
+.galery-homework__button--design{
+    position: relative;
+    top: 435px;
+    left: -134px;
+}
+.galery-homework__text--design {
+    position: relative;
+    top: 460px;
+    left: -123px;
+}
+.galery-homework__button--branding {
+    position: relative;
+    top: 435px;
+    left: -124px;
+}
+
+.galery-homework__text--branding {
+    position: relative;
+    top: 460px;
+    left: -76px;
+}
+.galery-homework__button--illustration {
+    position: relative;
+    top: 434px;
+    left: -117px;
+}
+
+.galery-homework__text--illustration {
+    position: relative;
+    top: 460px;
+    left: -54px;
+}
+.galery-homework__text--design h3{
+    text-transform: uppercase;
+}
+span:hover{
+    background-color: #000;
+    color: #FFF;
+}
+h3{
+    font-family: Epilogue;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: #FFF;
+}
