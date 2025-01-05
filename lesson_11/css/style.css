@@ -21,7 +21,7 @@ body{
         transition-duration: 0.5s;
 }
 .block__item--transform-translate:hover{
-    translate: 5% 5%;
+    transform: translate(5%, 5%);
 }
 .block__item--transform-scale:hover{
     transform: scale(0.8);
@@ -30,7 +30,7 @@ body{
     transform: rotate(25deg);
 }
 .block__item--rotate:hover{
-    rotate: 90deg;
+    transform: rotate(90deg);
 }
 .block__item--transform-skew:hover{
     transform: skew(5deg,5deg);
@@ -40,7 +40,7 @@ body{
 }
 .block__item--transform-origin:hover{
     transform-origin: 97% 27%;
-    rotate: -30deg;
+    transform: rotate(-30deg);
 }
 .block__item--perspective:hover{
     transform: rotateX(25deg);
@@ -88,7 +88,7 @@ backface-visibility
 }
 
 .list__item--usual:hover{
-    translate: 1000px 0px;
+    transform: translate(1000px, 0px);
 }
 
 .list__item--animated {
@@ -96,10 +96,10 @@ backface-visibility
 }
 @keyframes animated{
     0%{
-        translate: 0px 0px;
+        transform: translate(0px, 0px);
     }
     0%{
-        translate: 1000px 0px;
+        transform: translate(1000px, 0px);
     }
 }
 .list__item--delay{
@@ -136,19 +136,19 @@ backface-visibility
 }
 @keyframes rotate{
     0%{
-        rotate: 0deg;
+        transform: rotate(0deg);
     }
     25%{
-        rotate: 90deg;
+        transform: rotate(90deg);
     }
     50%{
-        rotate: 180deg;
+        transform: rotate(180deg);
     }
     75%{
-        rotate: 270deg;
+        transform: rotate(270deg);
     }
     100%{
-        rotate: 360deg;
+        transform: rotate(360deg);
     }
 }
 .list__item--keyframes{
