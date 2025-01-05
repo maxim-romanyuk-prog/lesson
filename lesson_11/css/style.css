@@ -1,0 +1,312 @@
+
+body{
+    height: 100%;
+}
+.block{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: rgba(252, 176, 126, 0.507);
+    margin: 20px 20px;
+    perspective: 400px;
+}
+.block__item{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        background-color: rgb(252, 176, 126);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.5s;
+}
+.block__item--transform-translate:hover{
+    translate: 5% 5%;
+}
+.block__item--transform-scale:hover{
+    transform: scale(0.8);
+}
+.block__item--transform-rotate:hover{
+    transform: rotate(25deg);
+}
+.block__item--rotate:hover{
+    rotate: 90deg;
+}
+.block__item--transform-skew:hover{
+    transform: skew(5deg,5deg);
+}
+.block__item--matrix:hover{
+    transform: translate(5%, 5%) scale(0.9) rotate(30deg) skew(5deg, 5deg);
+}
+.block__item--transform-origin:hover{
+    transform-origin: 97% 27%;
+    rotate: -30deg;
+}
+.block__item--perspective:hover{
+    transform: rotateX(25deg);
+    border: 1px solid black;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+}
+/* transform: translate (x, y);✅
+translate: 50% 50%; ✅
+transform: scale (n);✅
+transform: rotate (deg);✅
+rotate: 30deg;✅
+transform: skew (xdeg, ydeg);✅
+transform: translate(20%, 20%) scale(0.5) rotate(30deg) skew(20deg, 20deg);✅
+transform-origin: ___ ___;✅
+perspective
+perspective-origin
+translate3d
+transform-style: flat;
+backface-visibility
+
+Приклад перегортання картки на іншу сторону (flipper) */
+/* <=========================================> */
+.list__item{
+    width: 70px;
+    height: 70px;
+    background-color: bisque;
+    margin: 10px;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.animation{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.animation__list > p{
+    font-size: 32px;
+    text-align: center;
+}
+
+.list__item--usual:hover{
+    translate: 1000px 0px;
+}
+
+.list__item--animated {
+    animation-name: animated;
+}
+@keyframes animated{
+    0%{
+        translate: 0px 0px;
+    }
+    0%{
+        translate: 1000px 0px;
+    }
+}
+.list__item--delay{
+    animation-name: animated;
+    animation-delay: 10s;
+}
+
+.list__item--animated-ease {
+    animation-timing-function:ease;
+}
+
+.list__item--animated-linear {
+    animation-timing-function:linear;
+}
+
+.list__item--animated-ease-in {
+    animation-timing-function:ease-in;
+}
+
+.list__item--animated-ease-out {
+    animation-timing-function:ease-out;
+}
+
+.list__item--animated-ease-in-out {
+    animation-timing-function:ease-in-out;
+}
+
+.list__item--keyframes-moves{
+    position: relative;
+    animation-name: down;
+}
+.list__item--keyframes-rotate{
+    animation-name: rotate;
+}
+@keyframes rotate{
+    0%{
+        rotate: 0deg;
+    }
+    25%{
+        rotate: 90deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    75%{
+        rotate: 270deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+.list__item--keyframes{
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes down{
+    0%{
+        left: 0%;
+    }
+    100% {
+        left: 20%;
+    }
+}
+/* <=========================================> */
+
+.car{
+    position: relative;
+    height: 600px;
+}
+.car__details{
+    max-width: 1000px;
+    animation-name: moves;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.details__start{
+    position: absolute;
+    top: 300px;
+    left: 520px;
+    width: 200px;
+    height: 130px;
+    background-color: aqua;
+    border-top-left-radius: 50%;
+}
+@keyframes moves{
+    0% {
+        transform: translateX(-500px);
+    }
+
+    50% {
+        transform: translateX(calc(100vw - 1340px));
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+.details__center{
+        position: absolute;
+        top: 170px;
+        left: 720px;
+        width: 400px;
+        height: 260px;
+        background-color: aqua;
+        border-radius: 25% 50% 0 0 ;
+}
+.details__end {
+    position: absolute;
+    top: 300px;
+    left: 1120px;
+    width: 200px;
+    height: 130px;
+    background-color: aqua;
+    border-top-right-radius: 50%;
+}
+.details__wheel-end{
+    position: absolute;
+    top: 370px;
+    left: 650px;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border-radius: 100%;
+    border: 5px black dashed ;
+    animation: wheel 10s infinite linear, rotatewheel 5s infinite linear alternate;
+}
+.details__wheel-start{
+    position: absolute;
+    top: 370px;
+    left: 1050px;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border-radius: 100%;
+    border: 5px black dashed;
+    animation: wheel 10s infinite linear, rotatewheel 5s infinite linear alternate;
+}
+@keyframes wheel {
+    0% {
+        transform: translateX(-550px);
+    }
+
+    50% {
+        transform: translateX(calc(100vw - 1340px));
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes rotatewheel {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.details__lights-red{
+    position: absolute;
+    top: 320px;
+    left: 520px;
+    width: 50px;
+    height: 25px;
+    border: 5px solid burlywood;
+    background-color: red;
+    border-top-left-radius: 50%;
+}
+.details__lights-yellow{
+    position: absolute;
+    top: 300px;
+    left: 1220px;
+    width: 100px;
+    height: 50px;
+    border: 5px solid burlywood;
+    background-color: yellow;
+    border-top-right-radius: 50%;
+}
+.details__glass{
+    position: absolute;
+    top: 170px;
+    left: 920px;
+    width: 200px;
+    height: 160px;
+    border-radius: 0 90% 0 0;
+    background-color: rgba(75, 58, 35, 0.507);
+}
+.car__button-stop{
+    position: absolute;
+    top: 90%;
+    left: 48.5%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: 2px black solid;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 12.5px;
+}
+.car__button-stop:hover{
+    animation-play-state:paused
+}
+footer{
+    background-color: aqua;
+    text-align: center;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <div class="wrapper">
+        <div class="block">
+            <div class="block__item block__item--transform-translate">
+                <p>transform: translate (5%, 5%)</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__item block__item--transform-scale">
+                <p>transform: scale (0.8)</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__item block__item--transform-rotate">
+                <p>transform: rotate (25deg)</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__item block__item--rotate">
+                <p>rotate: 90deg</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__item block__item--transform-skew">
+                <p>transform: skew(5deg,5deg)</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__item block__item--matrix">
+                <p>Matrix (transform: translate(5%, 5%) scale(0.9) rotate(30deg) skew(5deg, 5deg);)</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__item block__item--transform-origin">
+                <p>transform-origin(зміна осі обертання)</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__item block__item--perspective">
+                <p>perspective:400px</p>
+            </div>
+        </div>
+    </div>
+    <div class="animation">
+        <div class="animation__list list">
+            <p>Квадрад Без анімації(hover)</p>
+            <div class="list__item list__item--usual"></div>
+            <p>Квадрад з анімації</p>
+            <div class="list__item list__item--animated"></div>
+            <p>Квадрад з анімації + ділей(10s)</p>
+            <div class="list__item list__item--delay"></div>
+            <p>Квадрад з анімацією(ease)</p>
+            <div class="list__item list__item--animated list__item--animated-ease"></div>
+            <p>Квадрад з анімацією(linear)</p>
+            <div class="list__item list__item--animated list__item--animated-linear"></div>
+            <p>Квадрад з анімацією(ease-in)</p>
+            <div class="list__item list__item--animated list__item--animated-ease-in"></div>
+            <p>Квадрад з анімацією(ease-out)</p>
+            <div class="list__item list__item--animated list__item--animated-ease-out"></div>
+            <p>Квадрад з анімацією(ease-in-out)</p>
+            <div class="list__item list__item--animated list__item--animated-ease-in-out"></div>
+            <p>Квадрад з @keyframes</p>
+            <div class="list__item list__item--keyframes list__item--keyframes-moves">moves</div>
+            <div class="list__item list__item--keyframes list__item--keyframes-rotate">rotate</div>
+        </div>
+    </div>
+    <div class="car">
+        <div class="car__details details">
+            <div class="details__start"></div>
+            <div class="details__center"></div>
+            <div class="details__end"></div>
+            <div class="details__wheel-end"></div>
+            <div class="details__wheel-start"></div>
+            <div class="details__lights-red"></div>
+            <div class="details__lights-yellow"></div>
+            <div class="details__glass"></div>
+        </div>
+    </div>
+    <footer>©2024</footer>
+</body>
+</html>
