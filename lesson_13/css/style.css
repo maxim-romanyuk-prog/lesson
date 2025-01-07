@@ -65,13 +65,13 @@ main{
     z-index: -1;
     border-radius: 6px;
 }
-.content-portfolio{
+.portfolio__content{
     position:relative;
     display: flex;
     flex: 0 1 670px;
     transition:all 0.5s ease-in;
 }
-.content-portfolio:hover{
+.portfolio__content:hover{
     box-shadow: 11px 15px 17px -16px rgba(255, 255, 255, 1);
     transform: scale(1.01);
 }
@@ -114,7 +114,7 @@ main{
 
 .content_name {}
 
-.content-portfolio__button {
+.content-portfolio__button{
     font-family: Epilogue;
     font-weight: 400;
     line-height: 32px;
