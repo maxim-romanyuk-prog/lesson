@@ -314,7 +314,7 @@ main{
 .contact-us__image--screen{
     margin: 70px 0px 0px 0px;
     max-width: 338px;
-    scale: 1.3;
+    transform:scale(1.3);
 }
 .contact-us__image--girl{
     max-width: 239px;
