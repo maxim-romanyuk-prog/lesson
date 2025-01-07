@@ -29,7 +29,7 @@ main{
 .portfolio__image{
 
 }
-.portfolio__item:nth-child(1) .content-portfolio::before {
+.portfolio__item:nth-child(1) .portfolio__content::before {
     content: '';
     background-image: url(../img/portfolio/design.webp);
     width: 100%;
@@ -38,7 +38,7 @@ main{
     z-index: -1;
     border-radius: 6px;
 }
-.portfolio__item:nth-child(2) .content-portfolio::before {
+.portfolio__item:nth-child(2) .portfolio__content::before {
     content: '';
     background-image: url(../img/portfolio/branding.webp);
     width: 100%;
@@ -47,7 +47,7 @@ main{
     z-index: -1;
     border-radius: 6px;
 }
-.portfolio__item:nth-child(3) .content-portfolio::before {
+.portfolio__item:nth-child(3) .portfolio__content::before {
     content: '';
     background-image: url(../img/portfolio/illustration.webp);
     width: 100%;
@@ -56,7 +56,7 @@ main{
     z-index: -1;
     border-radius: 6px;
 }
-.portfolio__item:nth-child(4) .content-portfolio::before {
+.portfolio__item:nth-child(4) .portfolio__content::before {
     content: '';
     background-image: url(../img/portfolio/motion.webp);
     width: 100%;
