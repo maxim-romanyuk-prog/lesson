@@ -445,12 +445,12 @@ input[type="checkbox"]:hover{
 }
 .privacy-policy__container input{
     position: absolute;
-    top: -160px;
+    top: 0px;
     left: 0px;
     opacity: 0;
     cursor: pointer;
-    height: 27px;
-    width: 392px;
+    height: 0px;
+    width: 0px;
     z-index: 2;
 }
 .privacy-policy__checkmark{
