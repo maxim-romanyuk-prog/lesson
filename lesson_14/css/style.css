@@ -443,8 +443,8 @@ input[type="checkbox"]:hover{
 }
 .privacy-policy__container input{
     position: absolute;
-    top: -160;
-    left: 0;
+    top: -160px;
+    left: 0px;
     opacity: 0;
     cursor: pointer;
     height: 27px;
@@ -494,7 +494,7 @@ button{
     transition: scale 0.3s ease-in;
 }
 button:hover{
-    scale: 1.05;
+    transform: scale(1.05);
 }
 /* ==================================================== */
 footer{
