@@ -227,7 +227,7 @@ img{
 .our-genres-slider__items {
     display: flex;
     gap: 20px;
-    
+    justify-content: space-around;
 }
 
 .our-genres-slider__item {
