@@ -133,11 +133,12 @@ img{
     border: 1px solid #262626;
     background: #141414;
     padding: 6px;
+    gap: 5px;
 }
 
 .info-must-watch-movies-slider__rating-of-movie {
     display: flex;
-    gap: 3px;
+    gap: 4px;
     justify-content: space-between;
     align-items: center;
     border-radius: 51px;
