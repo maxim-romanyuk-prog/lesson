@@ -46,6 +46,7 @@ body{
     background-color: #1A1A1A;
     border: 1px solid #1F1F1F;
     border-radius: 8px;
+    transition: all 0.3s linear;
 }
 
 .arrow-right {
@@ -53,6 +54,7 @@ body{
     background-color: #1A1A1A;
     border: 1px solid #1F1F1F;
     border-radius: 8px;
+    transition: all 0.3s linear;
 }
 
 .pages {
@@ -100,6 +102,13 @@ img{
     border: 1px solid #262626;
     background: #1A1A1A;
     flex: 0 1 calc(100% / 4 - ((20px * 3) / 4));
+    transition: all 0.5s ease-in-out;
+}
+
+.must-watch-movies-slider__item:hover{
+    transform: scale(1.03);
+    background-color: #1f1f1f;
+
 }
 
 .must-watch-movies-slider__image{
@@ -182,6 +191,11 @@ img{
     padding: 10px 24px;
     background-color: #E50000;
     border-radius: 8px;
+    transition: all 0.3s ease-in;
+}
+
+.our-genres-slider__button:hover{
+    transform: scale(1.03);
 }
 
 .our-genres-slider__header {
@@ -193,7 +207,15 @@ img{
 
 .our-genres-slider__controller {}
 
-.our-genres-slider__arrow-left {}
+.our-genres-slider__arrow-left {
+}
+.arrow-left:hover{
+        background-color: #2c2c2c;
+}
+
+.arrow-right:hover {
+    background-color: #2c2c2c;
+}
 
 .our-genres-slider__pages {}
 
@@ -215,10 +237,7 @@ img{
     border-radius: 12px;
     border: 1px solid #262626;
     background: #1A1A1A;
-}
-
-.our-genres-slider__item{
-
+    transition: all 0.5s linear;
 }
 
 
@@ -243,7 +262,7 @@ img{
 .our-genres-slider__images::before{
     content: '';
     width: 100%;
-    height: 100%;
+    height: 101%;
     background: linear-gradient(180deg, rgba(26, 26, 26, 0.00) 0%, #1A1A1A 101.79%);
     position: absolute;
     transform: scaleY(1);
@@ -255,6 +274,10 @@ img{
     animation: shadow-disappear 0.5s linear forwards;
 
 }
+.our-genres-slider__item:hover{
+    transform: scale(1.01);
+}
+
 .our-genres-slider__images::before:hover{
     background-color: red;
     
